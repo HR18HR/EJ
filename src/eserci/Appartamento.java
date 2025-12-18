@@ -8,7 +8,7 @@ public class Appartamento {
     List<Stanza> appartamenti;
     public Appartamento(List<Stanza> appartamenti, float valore) {
         this.appartamenti = appartamenti;
-        this.valore = valore;
+        this.valore = valore;//valore
     }
 
     public float getValore() {
