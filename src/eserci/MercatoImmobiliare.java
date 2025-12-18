@@ -14,7 +14,7 @@ public class MercatoImmobiliare {
             valoremedio+=ap.getValore();
         }
         return (valoremedio/appartamenti.size())*appartamento.getValore();
-        //ritorno valore medio per superfice
+        //ritorno valore medio per superfice//
 
     }
 }
