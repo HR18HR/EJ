@@ -1,7 +1,5 @@
-package esercizio.uno;
+package Nazione;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.TreeSet;
 
 public class MedagliereOlimpico implements Medagliere {

@@ -1,4 +1,4 @@
-package esercizio.uno;
+package Nazione;
 
 public class Nazione implements Comparable<Nazione>{
     public final String nome;

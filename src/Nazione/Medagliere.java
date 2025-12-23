@@ -1,4 +1,4 @@
-package esercizio.uno;
+package Nazione;
 
 public interface Medagliere {
     Nazione getPrimo();
