@@ -2,6 +2,7 @@ package Weather;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Date;
 
 public class WeatherData {
@@ -38,10 +39,12 @@ public class WeatherData {
     public Date getData() {
         return data;
     }
-    /*public static Object met() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    /*public static void met() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Class<?>c=WeatherData.class;
         Constructor<?>cos=c.getDeclaredConstructor(float.class,float.class,float.class,int.class,String.class,Date.class);
-        return cos.newInstance(10,10,10,20,"Moniego",new Date());
+        WeatherData d=(WeatherData) cos.newInstance(10,10,10,20,"Moniego",new Date());
+        Method m=c.getDeclaredMethod("getLocalita");
+        System.out.println(m.invoke(d));
     }*/
 
 }
