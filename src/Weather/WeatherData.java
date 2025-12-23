@@ -1,5 +1,7 @@
 package Weather;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
 public class WeatherData {
@@ -36,5 +38,10 @@ public class WeatherData {
     public Date getData() {
         return data;
     }
+    /*public static Object met() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        Class<?>c=WeatherData.class;
+        Constructor<?>cos=c.getDeclaredConstructor(float.class,float.class,float.class,int.class,String.class,Date.class);
+        return cos.newInstance(10,10,10,20,"Moniego",new Date());
+    }*/
 
 }
