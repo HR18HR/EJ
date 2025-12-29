@@ -9,5 +9,8 @@ public class Nodo<T>{
     public T getValore() {
         return valore;
     }
+    public Nodo<T> getProssimo() {
+        return prossimo;
+    }
 
 }

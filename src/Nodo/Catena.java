@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 
-public class Catena <T> implements Iterable<T>{
+public class Catena <T> implements Iterable<Nodo<T>>{
     Nodo<T> testa= null;
 
 
@@ -36,19 +36,19 @@ public class Catena <T> implements Iterable<T>{
     }
 
     @Override
-    public  Iterator<T> iterator() {
-        return new Iterator<T>() {
+    public  Iterator<Nodo<T>> iterator() {
+        return new Iterator<Nodo<T>>() {
             Nodo<T> c=testa;
             @Override
             public boolean hasNext() {
                 if(c==null)return false;
-                return c.prossimo!=null;
+                return c!=null;
             }
             @Override
-            public T next() {
-                T valore=c.valore;
-                c=c.prossimo;
-                return valore;
+            public Nodo<T> next() {
+                    Nodo<T>valore=c;
+                    c=c.prossimo;
+                    return valore;
             }
         };
     }

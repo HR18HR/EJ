@@ -6,8 +6,10 @@ class Main {
     catena.Aggiungi(4);
     catena.Aggiungi(3);
     catena.Aggiungi(8);
-    for(Integer i:catena){
-        System.out.println(i);
+    for(Nodo<Integer> i:catena){
+        System.out.print(i);
+        System.out.print("----");
+        System.out.println(i.getProssimo());
     };
 
 
