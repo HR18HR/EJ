@@ -41,7 +41,6 @@ public class Catena <T> implements Iterable<Nodo<T>>{
             Nodo<T> c=testa;
             @Override
             public boolean hasNext() {
-                if(c==null)return false;
                 return c!=null;
             }
             @Override
