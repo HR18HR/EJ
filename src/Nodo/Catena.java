@@ -10,8 +10,18 @@ public class Catena <T> implements Iterable<Nodo<T>>{
 
     public void Aggiungi(T valore){
         Nodo<T> k= new Nodo<T>(valore);
-        k.prossimo=testa;
-        testa=k;
+        if(testa!=null) {
+            Nodo<T> n= testa;
+            while (n.prossimo != null) {
+                n = n.prossimo;
+            }
+            n.prossimo = k;
+            k.prossimo = null;
+        }
+        else {
+            k.prossimo=null;
+            testa=k;
+        }
     }
     public Nodo<T> getCoda(){
         Nodo<T> c=testa;
@@ -22,10 +32,22 @@ public class Catena <T> implements Iterable<Nodo<T>>{
 
     }
 
-    public Nodo<T> size(){
+    public Nodo<T> Contains(T valore) {
+        Nodo<T> n =testa;
+        while(n.prossimo!=null||!(n.valore.equals(valore))){
+            n=n.prossimo;
+        }
+        return n;
+    }
+
+    public int  size(){
         Nodo<T>c=testa;
-        for(int i=0;c.prossimo!=null;i++,c=c.prossimo);
-        return c;
+        int i=0;
+        while(c!=null){
+            c=c.prossimo;
+            ++i;
+        }
+        return i;
     }
     public void Clear(){
        while(testa!=null){
