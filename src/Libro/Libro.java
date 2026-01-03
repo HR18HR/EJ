@@ -14,4 +14,5 @@ public final class Libro {
     public boolean isDisponibile(){
         return Copie>0;
     }
+
 }
