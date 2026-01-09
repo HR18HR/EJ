@@ -1,12 +1,15 @@
-import Nodo.*;
+import Campionato.Giocatore;
+import Campionato.Squadra;
 
 class Main  {
-    static Main k=new Main();
-    public static void main(String[] args) {
-        System.out.println(k.hashCode());
 
-    }
 
+    public static void main(String[] args)throws Exception {
+
+
+
+
+        }
 
     }
 
